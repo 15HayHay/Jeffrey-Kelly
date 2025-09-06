@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMDGBDENDP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CMDGBDENDP');
+  </script>
+
+  <title>Ben &amp; Elizabeth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="wedding.css">
+  <link rel="icon" href="Ben & Elizabeth/favicon.svg" type="svg">
+  <meta charset="UTF-8">
+  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+</head>
+
+<body>
+  <nav>
+    <button class="btn general-text center menu-toggle">
+      <img style="color:white;" width="30px" height="30px" src="Ben & Elizabeth/hamburga.svg" /><span>Menu</span>
+    </button>
+    <ul class="nav-links">
+      <a class="btn-select" href="index.html">Home</a>
+      <a class="btn" href="rsvp.html">RSVP</a>
+      <a class="btn" href="loveStory.html">Our love story</a>
+      <a class="btn" href="venue.html">Venue</a>
+      <a class="btn" href="registry.html">Registry</a>
+      <a class="btn" href="pics.html">Gallery</a>
+    </ul>
+  </nav>
+
+  <div class="cursor-pointed">
+    <img src="Piper.png" height="100px" width="90px" />
+  </div>
+
+  <div class="main-title-container">
+    <span class="main-title">
+      Jeffrey &amp; Kelly
+      <span class="main-title">
+      </span>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </div>
+
+
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/1.jpg"></li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/2.jpg"></li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/3.jpg"> </li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/5.jpg"> </li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/6.jpg"> </li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/7.jpg"> </li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/8.jpg"></li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/9.jpg"></li>
+        <li class="glide__slide"><img src="Jeffrey & Kelly/Cropped/10.jpg"></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script src="./site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"></script>
+  <script>
+    new Glide(".glide", {
+      type: "slider",
+      autoplay: 3000,
+      perView: 2,
+      focusAt: "center",
+      breakpoints: {
+        1000: {
+          perView: 1
+        },
+      }
+    }).mount();
+  </script>
+</body>
+
+</html>

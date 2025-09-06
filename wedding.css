@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+  cursor: none;
+}
+
+
+html {
+  --text: #d9fde9;
+  /* --background-test: #150126; */
+  --background-test: #000080;
+  --background: #f30eae;
+  --primary: #B76E79;
+  --secondary: #3B0467;
+  /* --secondary: #8e08a9; */
+  --accent: #B76E79;
+  --font-size: 24px;
+  --btn-font-size: 18px;
+
+
+  background-color: var(--background-test);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--primary);
+  /* Prevent horizontal scroll */
+}
+
+/* -------------- */
+/* Generic Styles */
+/* -------------- */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white {
+    color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mw-text {
+  max-width: 850px;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+.w-40 {
+    width: 160px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+/* ------------------ */
+/* Non-Generic Styles */
+/* ------------------ */
+
+.main-title-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.general-text {
+  font-size: var(--font-size);
+  color: var(--text);
+}
+
+.important-text {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  color: var(--primary);
+  font-size: 48px;
+}
+
+.cursor-pointed {
+  position: fixed;   
+  z-index: 20;       
+  pointer-events: none; 
+}
+
+.glide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glide__slide>img {
+  height: 70vh;
+  width: auto;
+  border: 5px var(--primary) inset;
+  object-fit: fill;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.love {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  width: 375px;
+  height: auto;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.btn-select {
+  background-color: var(--accent);
+  border-radius: 0px;
+  display: inline-block;
+  color: var(--text);
+  font-family: Arial;
+  font-size: var(--btn-font-size);
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+.btn {
+  background-color: var(--secondary);
+  border-radius: 0px;
+  display: inline-block;
+  color: var(--text);
+  font-family: Arial;
+  font-size: var(--btn-font-size);
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #a026d1;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.contributions{
+  color: #B76E79;
+}
+
+.loveStoryTitle{
+  text-align: center;
+  color:#B76E79
+}
+
+.rsvp-title{
+  text-align: center;
+}
+
+.rsvp-pic{
+  display:flex;
+  justify-content: center;
+  margin:auto;
+  width:25%;
+}
+
+/* Nav Bar Styling */
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-right: 42px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.date{
+  color:#B76E79
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.ya-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* RSVP Photo Container */
+.photo-container {
+  display: flex;
+  position: relative;
+  width: 500px;
+  margin: 40px auto;
+  
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.bride-groom-photo {
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Overlay RSVP Link */
+.overlay-link {
+  position: absolute;
+  top: 33%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 18px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.overlay-link:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #B76E79;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .mw-text {
+    max-width: 375px;
+  }
+
+  .love-story-pic {
+    width: 100%;
+    max-width: 375px;
+    object-fit: contain;
+  }
+
+  .menu-toggle {
+    z-index: 10;
+    display: flex;
+        gap: 8px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: var(--secondary);
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    z-index: 10;
+    margin: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
